@@ -1,0 +1,86 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doga's Cookies — order from the app</title>
+<style>
+  :root{
+    --dough:#f6efe2; --crust:#c98a4b; --deep:#3b2314; --ink:#2a1d13;
+    --soft:#7a6450; --card:#fffdf8; --line:#e7dbc8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--dough);color:var(--ink);
+    font:16px/1.55 ui-rounded,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:48px 20px 80px}
+  header{text-align:center;margin-bottom:40px}
+  .logo{font-size:40px;letter-spacing:-.02em;font-weight:750;color:var(--deep)}
+  .tag{color:var(--soft);margin-top:8px}
+  .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  h2{font-size:26px;letter-spacing:-.01em;margin-bottom:10px;color:var(--deep)}
+  p.lead{color:var(--soft);margin-bottom:22px}
+  ul{list-style:none}
+  li{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+  li b{display:block}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--crust);margin-top:8px;flex:0 0 auto}
+  .btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .btn{background:var(--deep);color:#fff;text-decoration:none;padding:13px 22px;
+    border-radius:12px;font-weight:600;font-size:15px;display:inline-block}
+  .btn.ghost{background:transparent;color:var(--deep);border:2px solid var(--deep)}
+  /* phone mock */
+  .phone{width:270px;margin:0 auto;background:#1a1512;border-radius:34px;padding:11px;
+    box-shadow:0 18px 44px #3b231426}
+  .screen{background:var(--card);border-radius:25px;overflow:hidden}
+  .bar{background:var(--deep);color:#fff;padding:13px 16px;font-weight:650;font-size:15px}
+  .item{display:flex;gap:11px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--line)}
+  .item img{width:44px;height:44px;border-radius:9px;object-fit:cover}
+  .item .n{flex:1;font-size:14px;font-weight:600}
+  .item .p{font-size:14px;color:var(--soft);font-variant-numeric:tabular-nums}
+  .cta{margin:13px 14px 16px;background:var(--crust);color:#fff;text-align:center;
+    padding:11px;border-radius:10px;font-weight:650;font-size:14px}
+  .note{margin-top:46px;padding-top:18px;border-top:1px solid var(--line);
+    color:var(--soft);font-size:13px;text-align:center}
+</style></head><body>
+<div class="wrap">
+  <header>
+    <div class="logo">Doga's Cookies</div>
+    <p class="tag">Baked to order in Redmond · Tuesday, Thursday, Saturday</p>
+  </header>
+
+  <div class="grid">
+    <div>
+      <h2>Order without the back and forth</h2>
+      <p class="lead">Pick your flavours, pick a day, and it's done. No DMs needed
+      unless you want to chat.</p>
+      <ul>
+        <li><span class="dot"></span><span><b>Build a mixed box</b>
+          Any combination of the three, same price.</span></li>
+        <li><span class="dot"></span><span><b>Pick your day</b>
+          Only the days that are actually baking days.</span></li>
+        <li><span class="dot"></span><span><b>Reorder in one tap</b>
+          Your usual is saved for next time.</span></li>
+        <li><span class="dot"></span><span><b>Pay on collection</b>
+          Venmo, Zelle or cash, same as always.</span></li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="#">Get the app</a>
+        <a class="btn ghost" href="#">Order on the web</a>
+      </div>
+    </div>
+
+    <div class="phone"><div class="screen">
+      <div class="bar">Today's menu</div>
+      <div class="item"><img src="cookies/chocolate-chip.png" alt="">
+        <span class="n">Chocolate chip</span><span class="p">$4</span></div>
+      <div class="item"><img src="cookies/oreo.png" alt="">
+        <span class="n">Oreo</span><span class="p">$4</span></div>
+      <div class="item"><img src="cookies/macadamia.png" alt="">
+        <span class="n">Macadamia</span><span class="p">$4</span></div>
+      <div class="item"><span class="n">Half dozen</span><span class="p">$21</span></div>
+      <div class="item"><span class="n">Dozen</span><span class="p">$38</span></div>
+      <div class="cta">Choose a pickup day</div>
+    </div></div>
+  </div>
+
+  <p class="note">Demonstration page for a proof of concept. There is no app and nothing
+  here can be ordered. Built by Amphibia · amphibiatech.com</p>
+</div>
+</body></html>
